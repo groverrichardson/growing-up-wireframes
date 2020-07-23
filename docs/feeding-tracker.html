@@ -4,25 +4,42 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Growing Up</title>
-        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="/docs/styles/style.css" />
     </head>
     <body>
         <div class="main-menu-container menu-home">
             <div class="left-menu-container">
-                <a href="/home-screen.html" class="left-menu-button">Home</a>
-                <a href="/sleep-tracker-start.html" class="left-menu-button"
+                <a href="/docs/home-screen.html" class="left-menu-button"
+                    >Home</a
+                >
+                <a
+                    href="/docs/sleep-tracker-start.html"
+                    class="left-menu-button"
                     >Sleep</a
                 >
-                <a href="/feeding-tracker-start.html" class="left-menu-button"
+                <a
+                    href="/docs/feeding-tracker-start.html"
+                    class="left-menu-button"
                     >Feeding</a
                 >
             </div>
             <div class="main-button-container">
-                <a href="/home-screen.html">Log Out</a>
+                <a href="/docs/home-screen.html">Log Out</a>
             </div>
         </div>
-        <div class="main-container">
-            <h1 class="feed-header">Feeding Tracker</h1>
+        <div class="main-container feed-main-container">
+            <div class="feed-dashboard">
+                <h2 class="feed-header">Feeding Tracker</h2>
+                <div class="timer-container">
+                    <p class="timer">02:35</p>
+                    <p class="last-feed">Last feed was at 5:00PM</p>
+                </div>
+            </div>
+            <div class="feed-buttons-container">
+                <button>Left</button>
+                <button>Bottle</button>
+                <button>Right</button>
+            </div>
             <div class="feed-list-container">
                 <div class="feed-log-container">
                     <div class="icon">L</div>
@@ -30,12 +47,12 @@
                     <p class="time">3:58PM</p>
                 </div>
                 <div class="feed-log-container">
-                    <div class="icon">R</div>
+                    <div class="icon">B</div>
                     <p class="duration">15 Min</p>
                     <p class="time">3:58PM</p>
                 </div>
                 <div class="feed-log-container">
-                    <div class="icon">B</div>
+                    <div class="icon">R</div>
                     <p class="duration">15 Min</p>
                     <p class="time">3:58PM</p>
                 </div>
@@ -55,7 +72,11 @@
                     <p class="time">3:58PM</p>
                 </div>
             </div>
-            <a href="/feeding-tracker.html" class="feed-start">Start Feeding</a>
+            <a
+                href="/docs/feeding-tracker-start.html"
+                class="feed-stop long-button"
+                >Stop Sleep</a
+            >
         </div>
     </body>
 </html>
